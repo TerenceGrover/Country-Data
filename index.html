@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:30 </title>
+
+<style>
+
+    button{
+        background-color: rgb(251, 196, 59);
+        border-radius: 20px;
+        border: none;
+        padding: 5px;
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: large;
+        box-shadow: 1px 1px 3px gray;
+    }
+
+    button:hover{
+        background-color: rgb(255, 214, 109);
+        cursor:pointer;
+    }
+
+    #buttons{
+        margin-top: 10px;
+    }
+
+    input{
+        padding: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-radius: 20px;
+        border:darkgray;
+        box-shadow: 1px 1px 3px gray;
+        color: rgb(251, 196, 59);
+        font-size:medium;
+    }
+    #interaction{
+        background-color:rgb(239, 239, 239);
+        padding: 30px;
+        padding-right: 260px;
+        padding-left: 260px;
+    }
+    #presentation{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 40px;
+        margin-top: 20px;
+    }
+    progress {
+        border: none;
+        width: 750px;
+        height: 16px;
+        background: rgb(251, 196, 59);
+    }
+
+progress {
+        color: lightblue;
+    }
+
+progress::-moz-progress-bar {
+        background: lightcolor;
+    }
+
+progress::-webkit-progress-value {
+        background: rgb(251, 196, 59);
+    }
+
+progress::-webkit-progress-bar {
+        background: lightgray;
+    }
+
+</style>
+
+</head>
+
+<body style="max-width: max-content; margin: auto;text-align: center;">
+   
+    <h1 style="color: rgb(251, 196, 59); font-size: 40px; margin-bottom: 7px;">World Countries Data</h1>
+    <h2 style="font-size: 20px; margin: 10px;">Currently we have 250 countries</h2>
+    <h3 style="color: rgb(251, 196, 59);"></h3>
+    <div id="interaction">
+        <div>
+            <input type="text" size="50"></input>
+        </div>
+        <div id="buttons">
+            <button id="nameselec">Name</button>
+            <button id="capselec">Capital</button>
+            <button id="popselec">Population</button>
+            <button id="scroll">IiIiIiI</button>
+        </div>
+    </div>
+    <div id="presentation">
+
+    </div>
+    <div id="data" style="background-color: rgb(239, 239, 239); padding: 30px;">
+        <div id="data-top">
+            <div>
+                <button>Population</button>
+                <button>Languages</button>
+            </div>
+            <div>
+                10 Most Pop/Languages
+            </div>
+        </div>
+        <div id="data-core">
+
+        </div>
+
+    </div>
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
